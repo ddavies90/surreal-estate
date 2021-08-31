@@ -28,10 +28,12 @@
         "tabWidth": 2,
         "trailingComma": "none",
         "bracketSpacing": true,
-        "semi": true
+        "semi": true,
+        "singleQuote": true
       }
     ],
     "quotes": [0],
+    "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": [0],
     "react/jsx-filename-extension": [
       1,
