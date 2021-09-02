@@ -1,12 +1,20 @@
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import '../styles/App.css';
+import AddProperty from './AddProperty';
+import Navbar from './NavBar';
+import Properties from './Properties';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h2>Surreal Estate</h2>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Properties} />
+          <Route path="/add-property" component={AddProperty} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
