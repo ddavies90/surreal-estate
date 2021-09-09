@@ -1,3 +1,31 @@
 .add-property {
   padding: 2rem;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-items: center;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
+
+    label {
+      padding: 0.2rem;
+      width: 100%;
+      text-align: center;
+      color: #9689e1;
+    }
+
+    input,
+    select,
+    button {
+      display: block;
+      padding: 0.2rem;
+      margin: 0.4rem auto;
+      width: 50%;
+    }
+  }
 }
